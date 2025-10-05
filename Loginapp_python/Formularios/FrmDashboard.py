@@ -31,7 +31,7 @@ class FrmDashboard:
     def mostrar_datos_usuario(self):
         nombre_completo = f"{self.usuario[1]} {self.usuario[2]}"
         email = self.usuario[3]
-        rol = self.usuario[6]
+        rol = self.usuario[6] 
         self.lbl_nombre.config(text=f"Nombre: {nombre_completo}")
         self.lbl_email.config(text=f"Email: {email}")
         self.lbl_rol.config(text=f"Rol: {rol}")
