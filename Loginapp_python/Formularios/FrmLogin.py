@@ -11,7 +11,7 @@ class FrmLogin:
         self.root.geometry("800x500")
         self.root.configure(bg="#f3f3f3")
 
-        
+
         tk.Label(self.root, text="INGRESO AL SISTEMA", font=("Times New Roman", 22), bg="#f3f3f3").place(x=480, y=40)
 
         logo_path = os.path.join(os.path.dirname(__file__), "logo_unitecnar.png")
