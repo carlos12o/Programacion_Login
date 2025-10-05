@@ -10,14 +10,12 @@ class FrmDashboard:
 
         self.usuario = usuario
 
-        # Menú con opción Usuarios y submenú Administración de usuarios
         menubar = tk.Menu(self.root)
         usuarios_menu = tk.Menu(menubar, tearoff=0)
         usuarios_menu.add_command(label="Administración de usuarios", command=self.mostrar_datos_usuario)
         menubar.add_cascade(label="Usuarios", menu=usuarios_menu)
         self.root.config(menu=menubar)
 
-        # Área donde se mostrarán los datos
         self.frame_datos = tk.Frame(self.root, bg="#f3f3f3")
         self.frame_datos.pack(pady=40)
 
